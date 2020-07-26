@@ -36,13 +36,13 @@
 
       <form action = "{{ url_for('predict')}}" method = "post">
 
-        <input type = "text" name = "GRE Score" placeholder = "GRE Score" required = "required" />
-        <input type = "text" name = "TOEFL Score" placeholder="TOEFL Score" required="required"/>
-        <input type = "text" name = "University Rating" placeholder="University Rating" required = "required"/>
-        <input type = "text" name = "SOP" placeholder= "SOP" required = "required" />
-        <input type = "text" name = "LOR" placeholder="LOR" required = "required" />
-        <input type = "text" name = "CGPA" placeholder="CGPA" required = "required" />
-        <input type = "text" name = "Research" placeholder="Research" required = "required" />
+        <input type = "text" name = "GRE Score" placeholder = "GRE Score (out of 340)" required = "required" />
+        <input type = "text" name = "TOEFL Score" placeholder="TOEFL Score (out of 120)" required="required"/>
+        <input type = "text" name = "University Rating" placeholder="University Rating (out of 5)" required = "required"/>
+        <input type = "text" name = "SOP" placeholder= "SOP (out of 5)" required = "required" />
+        <input type = "text" name = "LOR" placeholder="LOR (out of 5)" required = "required" />
+        <input type = "text" name = "CGPA" placeholder="CGPA (out of 10)" required = "required" />
+        <input type = "text" name = "Research (0 or 1)" placeholder="Research" required = "required" />
 
         <button type = "submit" class = "btn btn-primary btn-block btn-large">Predict</button>
       </form>
